@@ -7,81 +7,67 @@
     <link rel="stylesheet" href="../static/css/Lux.min.css" type="text/css">
     <link rel="stylesheet" href="../static/css/style.css" type="text/css">
 </head>
-<body style="max-height: 100vh; display: flex; flex-direction: column">
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">Git-Helper</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
-            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<body>
+<div style="position: absolute;max-height: 8rem; width: 100%">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">PyGoRun</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarColor01">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">管理<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">git教程</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">优质内容</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                   aria-expanded="false">交流区</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Works</a>
-                    <a class="dropdown-item" href="#">Todo</a>
-                    <a class="dropdown-item" href="#">Pictures</a>
-                </div>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">头像</button>
-        </form>
-    </div>
-</nav>
-
-<div class="container col-md-12" style="flex: 1; position: relative">
-    <!-- 模态框，分享信息提示 -->
-    <div class="modal" id="share-box">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Modal body text goes here.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">首页<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">专题</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">可视化</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Links</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                       aria-haspopup="true"
+                       aria-expanded="false">扩展</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Works</a>
+                        <a class="dropdown-item" href="#">Todo</a>
+                        <a class="dropdown-item" href="#">Pictures</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">...</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">搜索</button>
+            </form>
         </div>
-    </div>
-    <div style="display: flex; align-items: flex-start">
-        <div class="col-md-2"  style="padding: 0rem 0rem; max-height: 100%">
-            <!-- 文章详情页面 -->
-            <div class="jumbotron" style="height: 1300px">
-                <h3 class="display-5">项目管理</h3>
-                <p class="lead">所有项目</p>
-                <p class="lead">未分类项目</p>
-                <!-- 右侧内容框 -->
-                <!-- 评论模块 -->
-            </div>
-            <!-- 评论对象提示 -->
-        </div>
-        <div class="col-md-2">
-        </div>
-        <!-- 右侧内容框 -->
-    </div>
-
+    </nav>
 </div>
+<div style="height: 100vh; display: flex; flex-direction: column; overflow: hidden;">
+    <div style="display: flex; align-items: flex-start; height: 100%; position: relative; margin-top: 7rem">
+        <div class="col-md-2"
+             style="padding: 0rem 0rem; height: 100%; background-color: #0c5460; overflow: scroll; margin-bottom: 2rem">
+            <div style="height: 1400px; background-color: #2e72ea;">
+
+            </div>
+        </div>
+        <div class="col-md-2"
+             style="padding: 0rem 0rem; height: 100%; background-color: #0c5460; overflow: scroll; margin-bottom: 2rem">
+            <div style="height: 1400px; background-color: #bedb88;">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <!-- 返回顶部 -->
 <div style="position: fixed; right: 30px; bottom: 10vh">
     <span class="float-lg-right"><a href="#top">Back to top</a></span>

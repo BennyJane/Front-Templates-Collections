@@ -1,6 +1,6 @@
 ## demo案例内容
 - demo_1 hover状态下底图放大与文本出现
-- demo_2 
+- demo_2 hover 边线滚动效果
 
 
 ## CSS动画效果
